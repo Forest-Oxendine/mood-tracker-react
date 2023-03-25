@@ -13,7 +13,8 @@ const Buttons = (props) => {
         <HopefulButton>{props.Emotion6}</HopefulButton>
         <DeterminedButton>{props.Emotion7}</DeterminedButton>
         <LovingButton>{props.Emotion8}</LovingButton>
-        </CenterDiv>
+         </CenterDiv>
+         <PreSubsButton>{props.ClickButtonMessage}</PreSubsButton>
         </>
     );
 
@@ -51,4 +52,7 @@ background-color: #eaf76b;
 `
 const LovingButton = styled.button`
 background-color: #ff737e;
+`
+const PreSubsButton = styled.button`
+background-color: #ff9e56;
 `

@@ -20,6 +20,10 @@ function App(props) {
     Emotion7="Determined"
     Emotion8="Loving"
     />
+    <FeelingsQuest ClickButtonMsg="Click Here to View Past Submissions"/>
+    <Buttons
+    PastSubs="Past Entries"
+    />
     </>
   );
 }
