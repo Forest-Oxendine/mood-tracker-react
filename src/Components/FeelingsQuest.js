@@ -14,11 +14,11 @@ const Emotions = (props) => {
 export default Emotions;
 
 const MessageQuestion = styled.header`
- font-color: #B2BEB5;
+ font-color: #ff737e;
  text-align: center; 
 `
 const MessageQuestion1 = styled.h1`
-font-color: #B2BEB5;
+font-color: #7826ff;
 text-align: center; 
 `
 const MessageQuestion2 = styled.h2`

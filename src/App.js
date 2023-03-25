@@ -6,7 +6,7 @@ import Buttons from './Components/Buttons';
 function App(props) {
   return (
     <>
-      <FeelingsQuest PullQuestion="Do you want to improve your mental health?!"/>
+      <FeelingsQuest PullQuestion="Have you been thinking of ways to improve your mental health?!"/>
       <FeelingsQuest PresentSolution="Take Advantage Of Our Mood Tracker App To Track Your Emotional Health Daily!"/>
       <FeelingsQuest FeelingQuestion="Get started by selecting the emotion below that alignes with how you are feeling today"/>
   
