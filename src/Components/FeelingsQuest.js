@@ -16,17 +16,21 @@ export default Emotions;
 
 const MessageQuestion = styled.header`
  color: #ff737e;
- text-align: center; 
+ text-align: center;
+ font-family: 'Delicious Handrawn', cursive; 
 `
 const MessageQuestion1 = styled.h1`
 color: #7826ff;
-text-align: center; 
+text-align: center;
+font-family: 'Delicious Handrawn', cursive; 
 `
 const MessageQuestion2 = styled.h2`
-color: #B2BEB5;
-text-align: center; 
+color: #1b1c22;
+text-align: center;
+font-family: 'Delicious Handrawn', cursive; 
 `
 const ClickButtonMessage = styled.p`
 text-align: center;
-color: green;
+color: #7826ff;
+font-family: 'Indie Flower', cursive;
 `
