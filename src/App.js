@@ -1,8 +1,8 @@
 import './App.css';
 import FeelingsQuest from './Components/FeelingsQuest';
 import Buttons from './Components/Buttons'; 
-
-
+import React from 'react';
+import EmotionList from './Components/EmotionList';
 
 function App(props) {
   return (
@@ -23,6 +23,7 @@ function App(props) {
     
       <FeelingsQuest ClickButtonMsg="Click To See Your History"/>
     <Buttons Emotion="Past Entries"/>
+    <EmotionList/>
     </>
   );
 }
