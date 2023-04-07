@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const Buttons = (props) => {
+const Buttons = (props,{setRating, isSelected}) => {
     return (
        
         <>
         
-        <MoodButton>{props.Emotion}</MoodButton>
+        <MoodButton className={isSelected ? 'selected' : null} onClick={setRating}>{props.Emotion}</MoodButton>
         
         </>
        

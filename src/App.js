@@ -8,7 +8,9 @@ function App(props) {
   return (
     <>
       <FeelingsQuest PullQuestion="Have you been thinking of ways to improve your mental health?"/>
+      {/* <div className="image-container"> */}
       <img src="/images/MentalHealth.jpg" alt="Mental Helath Matters Text" />
+      {/* </div> */}
       <FeelingsQuest PresentSolution="Take Advantage Of The Mood Tracker To Get A Visual Of Your Emotional Health!"/>
       <FeelingsQuest FeelingQuestion="Get started by selecting the emotion below that aligns with how you are feeling today"/>
     
