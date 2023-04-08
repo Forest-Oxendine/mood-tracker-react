@@ -2,17 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const Buttons = (props,{setRating, isSelected}) => {
+const Buttons = (props) => {
+    // Text inside parenthases with props
+    // ,{setRating, isSelected}
     return (
        
         <>
         
-        <MoodButton className={isSelected ? 'selected' : null} onClick={setRating}>{props.Emotion}</MoodButton>
-        
+        <MoodButton>{props.Emotion}</MoodButton>
+        {/* This was inside the MoodButton div */}
+        {/* className={isSelected ? 'selected' : null} onClick={setRating}> */}
+       
         </>
        
         );
 }
+
 export default Buttons;
 
 

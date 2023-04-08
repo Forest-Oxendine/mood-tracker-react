@@ -1,58 +1,58 @@
 const emotionQuest = [
     {
       id: '1',
-      date: 'input',
+      date: '',
       entry: 'Happy',
-      optMsg: 'input',
+      optMsg: '',
       img: './img/Happy.png' 
     },
     {
     id: '2',
-    date: 'input ',
+    date: '',
     entry: 'Content',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
    },
    {
      id: '3',
-     date: 'input',
+     date: '',
      entry: 'Sad',
-     optMsg: 'input',
+     optMsg: '',
      img: './img/Happy.png' 
   },
   {
     id: '4',
-    date: 'input ',
+    date: '',
     entry: 'Excited',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
   },
   {
     id: '5',
-    date: 'input ',
+    date: ' ',
     entry: 'Tired',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
   },
   {
     id: '6',
-    date: 'input ',
+    date: ' ',
     entry: 'Hopeful',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
   },
   {
     id: '7',
-    date: 'input ',
+    date: ' ',
     entry: 'Determined',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
   },
   {
     id: '8',
-    date: 'input ',
+    date: ' ',
     entry: 'Loving',
-    optMsg: 'input',
+    optMsg: '',
     img: './img/Happy.png' 
   }
 ];

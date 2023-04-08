@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import EmotionRating from './EmotionRating';
+// import EmotionRating from './EmotionRating';
 
 const ButtonCard = ({date, entry, optMsg, img}) => {
   return (
     <StyledDiv>
       <img src={img} alt={entry} />
-      <EmotionRating/>
+      {/* <EmotionRating/> */}
       <todaysDate>{date}</todaysDate>
       <emotionalState>{entry}</emotionalState>
       <optionalMsg>{optMsg}</optionalMsg>

@@ -3,6 +3,7 @@ import FeelingsQuest from './Components/FeelingsQuest';
 import Buttons from './Components/Buttons'; 
 import React from 'react';
 import EmotionList from './Components/EmotionList';
+import InputMessage from './Components/InputMessage';
 
 function App(props) {
   return (
@@ -13,7 +14,7 @@ function App(props) {
       {/* </div> */}
       <FeelingsQuest PresentSolution="Take Advantage Of The Mood Tracker To Get A Visual Of Your Emotional Health!"/>
       <FeelingsQuest FeelingQuestion="Get started by selecting the emotion below that aligns with how you are feeling today"/>
-    
+    {/* Clickable buttons of emotions  */}
     <Buttons Emotion= "Happy"/>
     <Buttons Emotion="Content"/>
     <Buttons Emotion="Sad"/>
@@ -22,10 +23,11 @@ function App(props) {
     <Buttons Emotion="Hopeful"/>
     <Buttons Emotion="Determined"/>
     <Buttons Emotion="Loving"/>
-    
+       {/* Past entires text and button */}
       <FeelingsQuest ClickButtonMsg="Click To See Your History"/>
     <Buttons Emotion="Past Entries"/>
-    <EmotionList/>
+    {/* List of emotions with images and input fileds */}
+    <EmotionList/><InputMessage/>
     </>
   );
 }
