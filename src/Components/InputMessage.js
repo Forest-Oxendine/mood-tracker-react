@@ -1,38 +1,68 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
+
 
 function InputMessage (){
-    const [message, setMessage]=useState('');
-    const [submittedEmotion, setSubmittedEmotion]= useState('');
+    const [name, setName]=useState("");
+    const [submittedEmotion, setSubmittedEmotion]= useState("");
+    const [date, setDate]=useState("");
 
-    const handleInputChange = (event) =>{
-        setMessage(event.target.value);
+    const handleInputDateChange = (event)=>{
+        setDate(event.target.value);
         console.log(event.target.value);
-        
     }
-
+    const handleInputNameChange = (event) =>{
+        setName(event.target.value);
+        console.log(event.target.value); 
+    } 
+    const handleInputEmotionChange = (event)=>{
+        setSubmittedEmotion(event.target.value);
+        console.log(event.target.value);
+    }
     const handleSubmit = ()=>{
-        setSubmittedEmotion(message);
-        console.log('message submitted');
+        setSubmittedEmotion(submittedEmotion);
+        console.log(date, name, "is feeling", submittedEmotion);
         // Clears what the user enter in the text box
-        setMessage('');
+        setDate('');
+        setName('');
+        setSubmittedEmotion('');
     }
     // This returns the users input on the dom
     return(
-        <>
-        <p>You have Submitted, today you are feeling {submittedEmotion}</p>
-        {/* Must use input tag for a user to input a message */}
-        <input 
+        <StyledDiv>
+       <p>Enter today's date</p>
+         <input 
         type="text" 
-        value={message} 
-        onChange={handleInputChange}
+        value={date} 
+        onChange={handleInputDateChange}
          />
+       <p>Enter your name</p>
+         <input 
+        type="text" 
+        value={name} 
+        onChange={handleInputNameChange}
+         />
+      <p>How are you feeling today?</p>
+         <input 
+        type="text" 
+        value={submittedEmotion} 
+        onChange={handleInputEmotionChange}
+         />
+       <h3>You {name}, have submitted on {date} you are feeling {submittedEmotion}</h3>
+   
          {/* Handles what happens when the button is clicked */}
-        <button onClick={handleSubmit}>Submit</button>
-        </>
+        <button onClick={handleSubmit}>Submit Emotion</button>
+        
+        </StyledDiv>
     )
 }
 export default InputMessage;
 
+const StyledDiv = styled.div`
+  text-align: center;
+  margin: auto;
+  padding:  60px 20px 40px 20px;
+`
 
 
 
@@ -71,34 +101,5 @@ export default InputMessage;
 
 
 
-// import React, {useState} from 'react';
-// import Buttons from './Buttons';
 
 
-
-// const EmotionRating = () => {
-
-//     const [emoRating, setRating] = useState(0);
-
-//     const renderEmotions = () => {
-//             let emo = [];
-//             const maxRating = 1;
-//             for (let i=0; i < maxRating; i++) {
-//             emo.push(
-//                 <Buttons
-//                 isSelectd={emoRating > i}
-//                 setRating={() => handleSetRating(i+1)}
-//                 key={i}
-//                 />
-//             )
-//         }
-//         return emo;
-//     }
-// const handleSetRating = (rating) => {
-//     setRating(rating);
-// }
-    
-
-// }
-
-// export default EmotionRating;
