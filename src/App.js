@@ -30,6 +30,9 @@ function App(props) {
     <InputMessage/>
       {/* <FeelingsQuest ClickButtonMsg="Click To See Your History"/> */}
     <StyledDiv>
+    <StyledDiv>
+       <img src="/images/Happy.jpg" alt="30 Year Old Smiling" />
+      </StyledDiv>
      <Buttons Emotion="Past Entries"/>
     </StyledDiv>
     {/* List of emotions with images and input fileds */}
@@ -45,5 +48,9 @@ text-align: center;
 margin: auto;
 padding:  30px 20px 40px 20px;
 `
-
+const StyleDiv = styled.div`
+text-align: center;
+margin: auto;
+padding:  30px 20px 40px 20px;
+`
 
