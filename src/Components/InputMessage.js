@@ -16,7 +16,8 @@ function InputMessage (){
             ...userInfo,
             [event.target.name]: event.target.value
         });
-
+        
+            console.log(`this is to handle the handleInpputChange ${event.target.name} ${event.target.value}`);
     };
 
         const handleSubmit = (event)=>{
@@ -26,7 +27,7 @@ function InputMessage (){
                 emotion: userInfo.emotion,
                 date: userInfo.date
             };
-
+            console.log(`this is to handle submit ${newUserInfo}`)
             setEmotionEntry([...emotionEntry, newUserInfo]);
 
         setUserInfo({
@@ -64,11 +65,11 @@ function InputMessage (){
         {/* Handles what happens when the button is clicked */}
         <button type="submit">Submit Entry</button>
         
-         {emotionEntry.map((entry, index)=>
+         {emotionEntry.map((message, index)=>
         <div key={index}>
-            <h3>{entry.name}</h3>
-            <p>{entry.emotion}</p>
-            <p>{entry.date}</p>
+            <h3>{message.name}</h3>
+            <p>{message.emotion}</p>
+            <p>{message.date}</p>
         </div>
         )}
     </>
