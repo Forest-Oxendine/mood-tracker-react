@@ -15,7 +15,7 @@ export default Header;
 
 const HeaderDiv = styled.div`
     padding: 60px;
-    background: white;
+    background: #ebebfc;
 `
 const HeaderText = styled.h1`
 text-align: center;
