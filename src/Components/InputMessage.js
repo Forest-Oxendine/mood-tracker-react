@@ -41,30 +41,38 @@ function InputMessage (){
     return(
        
         <>
-       <p>Today's date</p>
-         <input onSubmit={handleSubmit}
-        type="text"
-        name="date" 
-        value={userInfo.date} 
-        onChange={handleInputChange}
-         />
-       <p>Your name</p>
-         <input onSubmit={handleSubmit}
-        type="text"
-        name="name" 
-        value={userInfo.name} 
-        onChange={handleInputChange}
-         />
-      <p>How are you feeling today?</p>
-         <input onSubmit={handleSubmit}
-        type="text"
-        name="emotion" 
-        value={userInfo.emotion} 
-        onChange={handleInputChange}
-         />
-        {/* Handles what happens when the button is clicked */}
-        <button type="submit">Submit Entry</button>
-        
+        <h1>Start Tracking Your Emotions!</h1>
+        <form onSubmit={handleSubmit}>
+            <label>
+                Today's date
+                <input 
+                    type="text"
+                    name="date" 
+                    value={userInfo.date} 
+                    onChange={handleInputChange}
+                    />
+            </label>
+            <label>
+                Your name
+                <input 
+                    type="text"
+                    name="name" 
+                    value={userInfo.name} 
+                    onChange={handleInputChange}
+                    />
+            </label>
+            <label>
+                How are you feeling today?
+                <input 
+                    type="text"
+                    name="emotion" 
+                    value={userInfo.emotion} 
+                    onChange={handleInputChange}
+                    />
+            </label>
+            {/* Handles what happens when the button is clicked */}
+            <button type="submit">Submit Entry</button>
+       </form>  
          {emotionEntry.map((message, index)=>
         <div key={index}>
             <h3>{message.name}</h3>

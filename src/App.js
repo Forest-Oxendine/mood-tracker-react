@@ -1,54 +1,32 @@
 import './App.css';
-import FeelingsQuest from './Components/FeelingsQuest';
-import Buttons from './Components/Buttons'; 
 import React from 'react';
-// import EmotionList from './Components/EmotionList';
-import InputMessage from './Components/InputMessage';
-import styled from 'styled-components';
+import {Route, Routes} from 'react-router-dom';
 
-function App(props) {
+
+import NewPage from './Components/NewPage';
+import Header from './Components/Header';
+import NavBar from './Components/NavBar';
+// import EmotionCard from './Components/EmotionCard';
+import MoodQuestionsPage from './Components/MoodQuestionsPage';
+import EmotionList from './Components/EmotionList';
+
+
+function App() {
   return (
-    <>
-    {/* Questions for user */}
-      <FeelingsQuest PullQuestion="Have you been thinking of ways to improve your mental health?"/>
-      <StyledDiv>
-       <img src="/images/MentalHealth.jpg" alt="Mental Helath Matters Text" />
-      </StyledDiv>
-      <FeelingsQuest PresentSolution="Take Advantage Of The Mood Tracker To Get A Visual Of Your Emotional Health!"/>
-      <FeelingsQuest FeelingQuestion="Get started by selecting the emotion below that aligns with how you are feeling today"/>
-
-    {/* Clickable buttons of emotions  */}
-    {/* <StyledDiv>
-     <Buttons Emotion= "Happy"/>
-     <Buttons Emotion="Content"/>
-     <Buttons Emotion="Sad"/>
-     <Buttons Emotion="Excited"/>
-     <Buttons Emotion="Tired"/>
-     <Buttons Emotion="Hopeful"/>
-     <Buttons Emotion="Determined"/>
-     <Buttons Emotion="Loving"/>
-    </StyledDiv> */}
-
-    {/* User inputs their information */}
-    <InputMessage/>
-
-    {/* User can click this button to view past entries   */}
-    {/* <StyledDiv>
-     <Buttons Emotion="Past Entries"/>
-    </StyledDiv> */}
-
-    {/* List of emotions with images and input fileds */}
-    {/* <EmotionList/> */}
-    </>
+    <div>
+      <NavBar/>
+      <Header/>
+      <Routes>
+        <Route path='/' end element={<NewPage/>}/>
+        <Route path='/moodquestionspage' element={<MoodQuestionsPage/>}/>
+        <Route path='/emotionlist' element={<EmotionList/>}/>
+      </Routes>
+    </div>
   );
 }
 
 export default App;
 
-const StyledDiv = styled.div`
-text-align: center;
-margin: auto;
-padding:  30px 20px 40px 20px;
-`
+
 
 

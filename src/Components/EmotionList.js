@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import emotionQuest from '../emotion-data.js';
 
 //import components
-import ButtonCard from './ButtonCard.js';
+import EmotionCard from './EmotionCard.js';
 
 function EmotionList() {
   return (
     <>
-     {emotionQuest.map(entries =>
-      <ButtonCard 
-      {...entries}
-      key={entries.id}
+     {emotionQuest.map(entry =>
+      <EmotionCard 
+      {...entry}
+      key={entry.id}
       />
       )}
     </>
